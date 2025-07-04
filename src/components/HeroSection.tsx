@@ -10,7 +10,7 @@ export default function HeroSection() {
           Pear kiwi<br />& Mint
         </h1>
         <p className="text-gray-text text-base md:text-[16px] max-w-md text-center md:text-left">
-          They say that home is where the heart is. Perhaps that's why a feeling of loss is so apparent when you are far from the ones you love.
+          They say that home is where the heart is. Perhaps that&apos;s why a feeling of loss is so apparent when you are far from the ones you love.
         </p>
       </div>
       {/* Right: Image/Graphics */}

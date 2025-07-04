@@ -38,7 +38,7 @@ export default function BestsellersSection() {
       {/* Right: Product Cards */}
       <div className="w-full md:w-2/3 flex flex-col items-center md:items-end px-4 md:pr-12">
         <div className="w-full flex flex-col md:flex-row gap-6 md:gap-8 max-w-3xl">
-          {products.map((product, idx) => (
+          {products.map((product) => (
             <div key={product.name} className="relative bg-background-gray rounded-[24px] shadow-md flex flex-col w-full md:w-1/2 overflow-hidden">
               <div className="relative w-full h-[220px] md:h-[260px]">
                 <Image src={product.image} alt={product.name} fill className="object-cover" />

@@ -31,7 +31,7 @@ export default function AromatherapySection() {
           Improve your well-being with Aromatherapy
         </h2>
         <p className="text-gray-text text-base max-w-md mb-8 md:text-[15px]">
-          Diffusing can be exactly what you need to add purpose and focus to your daily tasks. We've got tons of fun diffuser blends, with scents to suit every mood, day and situation.
+          Diffusing can be exactly what you need to add purpose and focus to your daily tasks. We&apos;ve got tons of fun diffuser blends, with scents to suit every mood, day and situation.
         </p>
         <button className="w-full md:w-auto bg-green text-white font-semibold rounded-md px-8 py-3 text-base md:text-sm shadow-md hover:bg-green/90 transition-colors">
           EXPLORE THE COLLECTION
