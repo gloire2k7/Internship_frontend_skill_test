@@ -23,18 +23,20 @@ export default function TrendsSection() {
   return (
     <section className="w-full flex flex-col md:flex-row items-center justify-between bg-white overflow-hidden py-12 md:py-20">
       {/* Left: Title, Button, Plant BG */}
-      <div className="relative w-full md:w-1/3 flex flex-col items-center md:items-start justify-center px-4 md:px-12 mb-8 md:mb-0 min-h-[260px] md:min-h-[400px]">
+      <div className="relative w-full md:w-1/3 flex flex-col items-center md:items-start justify-center px-0 md:pl-0 md:pr-12 mb-8 md:mb-0 min-h-[260px] md:min-h-[400px]">
         {/* Plant background */}
-        <div className="absolute inset-0 flex items-center justify-center md:justify-start pointer-events-none select-none">
-          <Image src={plantBg} alt="Plant background" fill className="object-contain opacity-20 md:opacity-100" />
+        <div className="absolute inset-0 left-0 flex items-center justify-center md:justify-start pointer-events-none select-none">
+          <Image src={plantBg} alt="Plant background" fill className="object-contain object-left opacity-20 md:opacity-100" />
         </div>
-        <h2 className="relative text-green text-4xl md:text-5xl font-bold mb-6 text-center md:text-left z-10">Trends</h2>
-        <button className="relative bg-green text-white font-semibold rounded-md px-12 py-3 text-base md:text-lg shadow-md hover:bg-green/90 transition-colors z-10">
-          SHOP ALL
-        </button>
+        <div className="relative z-10 w-full flex flex-col items-center md:items-start md:pl-12">
+          <h2 className="text-green text-4xl md:text-5xl font-bold mb-6 text-center md:text-left">Trends</h2>
+          <button className="bg-green text-white font-semibold rounded-md px-12 py-3 text-base md:text-md shadow-md hover:bg-green/90 transition-colors">
+            SHOP ALL
+          </button>
+        </div>
       </div>
       {/* Right: Product Cards */}
-      <div className="w-full md:w-2/3 flex flex-col items-center md:items-end px-4 md:px-0">
+      <div className="w-full md:w-2/3 flex flex-col items-center md:items-end px-4 md:pr-12">
         <div className="w-full flex flex-col md:flex-row gap-6 md:gap-8 max-w-3xl">
           {products.map((product, idx) => (
             <div key={product.name} className="relative bg-background-gray rounded-[24px] shadow-md flex flex-col w-full md:w-1/2 overflow-hidden">
@@ -56,8 +58,8 @@ export default function TrendsSection() {
             </div>
           ))}
         </div>
-        {/* Carousel dots (static for now) */}
-        <div className="flex gap-2 mt-6 md:mt-8">
+        {/* Carousel dots (centered) */}
+        <div className="flex gap-2 mt-6 md:mt-8 w-full justify-center">
           <span className="w-3 h-3 rounded-full bg-green inline-block" />
           <span className="w-3 h-3 rounded-full bg-gray-text/40 inline-block" />
           <span className="w-3 h-3 rounded-full bg-gray-text/40 inline-block" />

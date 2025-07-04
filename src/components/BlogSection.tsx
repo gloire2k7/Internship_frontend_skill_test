@@ -23,9 +23,9 @@ export default function BlogSection() {
   return (
     <section className="w-full py-12 md:py-20 bg-white flex flex-col items-center">
       <h2 className="text-green text-3xl md:text-4xl font-bold mb-10 text-center">BLOG</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl px-4 justify-center">
         {blogPosts.map((post, idx) => (
-          <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+          <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col mx-auto w-full max-w-xs md:max-w-sm">
             <div className="relative w-full h-[180px] md:h-[200px]">
               <Image src={post.image} alt={post.title} fill className="object-cover" />
             </div>
