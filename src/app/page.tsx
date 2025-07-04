@@ -4,6 +4,7 @@ import AromatherapySection from '../components/AromatherapySection';
 import BestsellersSection from '../components/BestsellersSection';
 import LuxurySoapsSection from '../components/LuxurySoapsSection';
 import TrendsSection from '../components/TrendsSection';
+import BlogSection from '../components/BlogSection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <BestsellersSection />
       <LuxurySoapsSection />
       <TrendsSection />
+      <BlogSection />
     </>
   );
 }
